@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  #call-now-small-screen-banner, #aero-img-mobile-container, #small-screen-accounting-software-heading-line
+        {
+           display: none;
+        }
+        
+        header
+        {
+          display: flex;
+          justify-content: center;
+          background-color: #89cf6d;
+          color: white;
+          padding-left: 40px;
+          padding-right: 40px;
+          padding-top: 57px;
+          padding-bottom: 60px;
+          white-space: nowrap;
+        }
+        
+        header h1
+        {
+          font-size: 36px;
+          line-height: 40px;
+          font-weight: bold;
+          margin-bottom: 20px;
+          margin-top: 0px;
+        }
+        #price  
+        {
+            font-size: 36px;
+            line-height: 40px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        #pricetag  
+        {
+            font-size: 32px;
+            line-height: 40px;
+            margin-bottom: 20px;
+            
+        }
+        #pricestar  
+        {
+            font-size: 23px;
+            line-height: 40px;
+            margin-bottom: 20px;
+        }
+        
+        #center-statment-very-small-screen
+        {
+            display: none;
+        }
+        #center-statment
+        {
+           
+            margin-bottom: 20px;
+            margin-top: 20px;
+            line-height: 1.5384616;
+          
+        }
+        
+        .center-statment-dot 
+        {
+            height: 3px;
+            width: 3px;
+            background-color: white;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        
+        #professional {
+            margin: 10px;
+            font-style: italic;
+            text-align: center;
+            font-size: 14px;
+        }
+        
+        #aero-img-desktop-container img
+        {
+          margin-top: 178px;
+            transform: rotate(7deg);
+            margin-left: -19px;
+        }
+        
+        .icon-statements
+        {
+           line-height: 18px;
+        }
+        /*
+        form
+        {
+          width: 380px;
+          background-color: #EDEFF2;
+          color: black;
+          padding-left: 20px;
+          padding-right: 20px;
+          border-radius: 3px;
+          padding-top: 25px;
+          margin-top: 16px;
+          padding-bottom: 34px;
+        }
+        
+        textarea, input, select
+        {
+          outline: none;
+          -webkit-appearance: none;
+          padding:12px;
+          border:none;
+          border-radius: 1px;
+        }
+        
+        input, select, textarea, button
+        {
+            font-family:inherit;
+            font-size: 13px;
+        }*/
+        
+        #form-header
+        {
+          text-align: center;
+          padding-bottom: 10px;
+        }
+        
+        #form-header p
+        {
+          font-size: 18px;
+          line-height: 30px;
+          letter-spacing: 0.005em;
+          font-weight: bold;
+          margin-bottom: -9px;
+        }
+        
+        #form-img-yellow
+        {
+          width: 80px;
+          height: 7px;
+        }
+        
+        #salutation
+        {
+          background: white;
+          width: 20%;
+        }
+        
+        .form-block-elements
+        {
+          display: block;
+          margin-top: 10px;
+          width: 99%;
+          background: white;
+        }
+        
+        #form-first-row
+        {
+          display: inline-block;
+          width: 100%;
+        }
+        
+        #first_name
+        {
+          width: 76%;
+          margin-left: 8px;
+        }
+        
+        #main-form-button:hover
+        {
+            background: #d88f00;
+        }
+        
+        #main-form-button
+        {
+          background-color: #FDA700;
+          color: white;
+          text-align: center;
+          cursor: pointer;
+          border: 1px solid transparent;
+          font-size: 13px;
+          line-height: 1.5384616;
+          border-radius: 3px;
+          -webkit-user-select: none;
+          font-weight: 700;
+          letter-spacing: 0.08em;
+          box-shadow: 0 2px 0 #a36b00;
+          padding: 11px;
+          border-radius: 2px;
+          width: 100%;
+        }
+        
+        #form-button-container
+        {
+          text-align: center;
+          margin-top: 10px;
+        }
+        
+        section
+        {
+           text-align: center;
+        }
+        
+        #free-services-main-container
+        {
+            border: 1px solid white;
+            border-radius: 2px;
+              margin-left:0%;
+            margin-right:0%;
+        }
+        
+        #absolutely-free-container
+        {
+           display: flex;
+           justify-content: space-between;
+           padding: 15px;
+              width: 570px;
+        
+          /*  padding-left:30px;*/
+          /* padding-right:30px;*/
+        }
+        #absolutely-free-container-for-mobile
+        {
+          display: flex;
+          flex-direction: column;
+          display: none ;
+           padding: 15px;
+        }
+        #free-section-plus-sign
+        {
+          /*padding-left: 25px;*/
+         /* padding-top: 5px;*/
+              padding-top: 1px;
+            font-size: 19px !important;
+        }
+        
+        #free-section-or-conjuction
+        {
+          padding-left: 10px;
+          padding-top: 5px;
+        }
+        
+        #absolutely-free-container img,#absolutely-free-container-for-mobile img
+        {
+           border-radius: 100%;
+           background-color: white;
+        }
+        
+        #absolutely-free-container p, #absolutely-free-container-for-mobile p
+        {
+           font-size: 11px;
+           margin-top: 10px;
+           text-align: center;
+        }
+        
+        
+        #free-container-box-header
+        {
+           background-color: #fff;
+           color: #004CD2;
+        }
+        
+        
+        #free-container-box-header
+        {
+          text-align: center;
+          padding: 5px;
+          font-size: 13px;
+          font-weight: bold;
+        }
+        
+        .call-a-contact-number 
+        {
+            text-decoration:none;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+        
+        @media  screen and (max-width: 1230px)
+        {
+            #aero-img-desktop-container img
+            {
+                width: 300px;
+                transform: rotate(14deg);
+                margin-top: 195px;
+            }
+        } 
+        
+        @media  screen and (max-width: 1100px)
+        {
+            #aero-img-desktop-container 
+            {
+               display: none;
+            }
+        
+            #header-info-part
+            {
+               margin-right: 100px;
+            }
+        } 
+        
+        @media  screen and (max-width: 930px)
+        {
+            #header-info-part
+            {
+               margin-right: 50px;
+            }
+        }
+        
+        @media  screen and (max-width: 880px)
+        {
+          #aero-img-desktop-container, #aero-img-desktop-container img, header, section, #header-info-part, #call-now-banner
+          {
+             padding: 0;
+             margin: 0;
+          }
+        
+          #large-screen-accounting-software-heading-line
+          {
+             display: none;
+          }
+        
+          #free-services-main-container
+          {
+             border: none;
+          }
+        #professional {
+            display: none;
+        }
+          header
+          {
+             flex-direction: column;
+             padding-bottom: 20px;
+          }
+        
+          header h1
+          {
+             font-size: 30px;
+          }
+        
+          #pricetag, #price, header s
+          {
+             font-size: 25px;
+          }
+        
+          #free-section-plus-sign
+          {
+            /*padding-left: 45px;*/
+            font-size: 13px !important;
+            font-weight: bold;
+          }
+        
+          #free-section-or-conjuction
+          {
+            padding-left: 0px;
+            padding-right: 40px;
+            font-size: 9px !important
+           
+          }
+        
+          #small-screen-accounting-software-heading-line
+          {
+             display: block;
+          }
+        
+          #free-services-main-container img
+          {
+            /* width: 36px;*/
+          }
+        
+        
+          #free-section-middle-one
+          {
+             margin-left: 0px;
+             margin-right: 0px;
+          }
+        
+          #center-statment
+          {
+             font-size: 14px;
+             margin-top: 20px;
+             margin-bottom: 10px;
+          }
+        
+        
+          #free-container-box-header
+          {
+              background-color: #004CD2; 
+              color: white;
+              font-weight: normal !important; 
+              letter-spacing: 0.025em;
+          }
+        
+          #absolutely-free-container
+          {
+             display: flex;
+             justify-content: center;
+          }
+        
+          #call-now-banner
+          {
+             display: none;
+          }
+        
+          #call-now-small-screen-banner
+          {
+             display: block;
+             font-size: 13px;
+          }
+        
+          form
+          {
+             width: 80vw; 
+             margin: auto;
+             margin-top: 20px;
+          }
+          header h1
+          {
+              margin-bottom: 0px;
+                  margin-top: 20px;
+          }
+        }
+        
+        @media  screen and (max-width: 650px)
+        {
+          header h1
+          {
+             font-size: 25px;
+             margin-bottom: -6px;
+          }
+        
+          #pricetag, #price, header s
+          {
+             font-size: 20px;
+          }
+        
+         
+        
+          #aero-img-mobile-container
+          {
+             display: block;
+             margin-left: 80%;
+             margin-top: -150px;
+          }
+        #aero-img-mobile-container img
+        {
+                position: relative;
+            right: 0px;
+            width: 80px;
+            transform: rotate(-5deg);
+            margin-top: -8px;
+        
+        }
+          form
+          {
+             width: 90vw; 
+          }
+        
+          #free-container-box-header
+          {
+                font-size: 13px;
+                font-weight: normal;
+          }
+         #center-statment
+          {
+             font-size: 12px !important;
+             margin-top:0px;
+          }
+          #call-now-small-screen-banner
+          {
+             font-size: 13px;
+             margin-top: -30px;
+          }
+        }
+        
+        @media  screen and (max-width: 520px)
+        {
+            #free-section-middle-one
+            {
+               margin-left: 20px;
+               margin-right: 0px;
+            }
+        
+            #free-section-plus-sign
+            {
+              /*padding-left: 25px;*/
+            }
+        
+            #free-section-or-conjuction
+            {
+              padding-left: 10px;
+              padding-right: 20px;
+            }
+        }
+        
+        @media  screen and (max-width: 400px)
+        {
+            #free-section-middle-one
+            {
+               margin-left: 0px;
+               margin-right: 0px;
+            }
+        
+            #free-section-plus-sign
+            {
+              /*padding-left: 15px;*/
+            }
+        
+            #free-section-or-conjuction
+            {
+              padding-left: 5px;
+              padding-right: 15px;
+            }
+        }
+        
+        @media  only screen and (max-width: 550px)
+        {
+        #aero-img-mobile-container img {
+            position: relative;
+            right: 0px;
+            width: 77px;
+            transform: rotate(0deg);
+            margin-top: -41px;
+        }
+        #call-now-small-screen-banner {
+            font-size: 12px;
+            margin-top: -28px;
+        }
+        #header h1
+        {
+          margin-top: 7px;
+        }
+        
+        }
+        
+        @media  only screen and (max-width: 397px) 
+        {
+               
+           #aero-img-mobile-container img {
+            right: -5px;
+            width: 60px;
+            height: 191px;
+            transform: rotate(4deg);
+            margin-top: -18px;
+        }
+        
+        }
+        @media  only screen and (max-width: 371px) 
+        {
+              #aero-img-mobile-container img {
+            
+          right: -5px;
+            width: 60px;
+            height: 191px;
+            transform: rotate(4deg);
+            margin-top: -18px;
+        }
+        
+        }
+        @media  only screen and (max-width: 321px) 
+        {
+               
+           #aero-img-mobile-container img {
+              right: -5px;
+            width: 46px;
+            height: 178px;
+            transform: rotate(5deg);
+            margin-top: 1px;
+        }
+        
+        }
+        
+        @media  screen and (max-width: 1360px)
+        {
+          #absolutely-free-container
+          {
+            width: 510px;
+          }
+        }
+        @media  screen and (max-width: 1000px)
+        {
+          #absolutely-free-container
+          {
+            width: 100%;
+            margin-left: -4%;
+            margin-right: 0%;
+          }
+        }
+        @media  screen and (max-width: 1200px)
+        {
+          #absolutely-free-container
+          {
+            width: 430px;
+        
+          }
+          .free-section
+          {
+            width: 30%!important;
+          }
+        } 
+        .free-section
+        {
+          width: 25%;
+        }
+        
+        .offer-section-for-mobile
+        {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+        }
+        @media  screen and (max-width: 880px)
+        {
+          #absolutely-free-container
+          {
+             display: flex;
+             justify-content: center;
+             display: none;
+             visibility: none;
+          }
+          #absolutely-free-container-for-mobile
+          {
+             display: flex;
+             justify-content: center;
+             visibility: visible;
+             display:visible !important;
+             padding-left: 20%;
+             padding-right: 20%;
+          }
+         .offer-section-for-mobile
+            {
+              justify-content: space-between;
+              width: 100%;
+            }
+        }
+        
+        @media  screen and (max-width: 849px)
+        {
+         
+          .free-section
+          {
+            width: 50% !important;
+          }
+        }
+        @media  screen and (max-width: 520px)
+        {
+           #absolutely-free-container-for-mobile
+            {
+                padding-left: 10%;
+               padding-right: 10%;
+            }
+        }
+        @media  screen and (max-width: 420px)
+        {
+           #absolutely-free-container-for-mobile
+            {
+                padding-left: 2% !important;
+               padding-right: 2% !important;
+            }
+        }
+    
+
+    </style>
+</head>
+<body>
+     <header>
+        <section id="header-info-part">
+        <h1>Private Limited Company<br /> Registration</h1>
+        <h2><span id="pricetag">@ Rs. </span><span id="price">6,299 </span><sup id="pricestar">*</sup>
+        </h2>
+        <p id="center-statment">In 15 days &nbsp; <span class="center-statment-dot"></span> &nbsp; From Any where &nbsp; <span class="center-statment-dot"></span> &nbsp; At a Single Click </p>
+        <div id="free-services-main-container">
+        <p id="free-container-box-header">Also Get Absolutely Free</p>
+        <div id="absolutely-free-container">
+        <div class="free-section">
+        <img src="../images//pan-tan-registration.svg" alt="pan tan icon">
+        <p class="icon-statements">
+        PAN &amp; TAN
+        <br />
+        Registration
+        </p>
+        </div>
+        <p id="free-section-plus-sign">+</p>
+        <div class="free-section" id="free-section-middle-one">
+        <img src="../images/pf_esic_Professional-taxregistration-svg2.svg" alt="pan tan icon">
+        <p class="icon-statements">
+        PF + ESIC +
+        <br />
+        Professional Tax
+        </p>
+        </div>
+        <p id="free-section-plus-sign">+</p>
+        <div class="free-section">
+        <img src="../images/domain-name-hosting.svg" alt="domain hosting icon">
+        <p class="icon-statements">
+        Domain Name + 1yr <br>
+        hosting + 10 emails
+        </p>
+        </div>
+        <p id="free-section-plus-sign">+</p>
+        <div class="free-section">
+        <img src="../images/medical-insurance.svg" alt="medical insurance icon">
+        <p class="icon-statements">
+        Medical Insurance for 2<br />
+        Partners for Rs. 2 Lac each
+        </p>
+        </div>
+        </div>
+        </div>
+        
+        <div id="absolutely-free-container-for-mobile">
+        <div class="offer-section-for-mobile">
+        <div class="free-section">
+        <img src="../images/pan-tan-registration.svg" alt="pan tan icon">
+        <p class="icon-statements">
+        PAN &amp; TAN
+        <br />
+        Registration
+        </p>
+        </div>
+        <p id="free-section-plus-sign-for-mobile">+</p>
+        <div class="free-section" id="free-section-middle-one">
+        <img src="../images/pf_esic_Professional-taxregistration-svg2.svg" alt="pan tan icon">
+        <p class="icon-statements">
+        PF + ESIC +
+        <br />
+        Professional Tax
+        </p>
+        </div>
+        </div>
+        <br />
+        <div class="offer-section-for-mobile">
+        <div class="free-section">
+        <img src="../images/medical-insurance.svg" alt="domain hosting icon">
+        <p class="icon-statements">
+        Domain Name + 1yr <br>
+        hosting + 10 emails
+        </p>
+        </div>
+        <p id="free-section-plus-sign-for-mobile">+</p>
+        <div class="free-section">
+        <img src="../images/medical-insurance.svg" alt="medical insurance icon">
+        
+        <p class="icon-statements">
+        Medical Insurance for 2<br />
+        Partners for Rs. 2 Lac each
+        </p>
+        </div>
+        </div>
+        </div>
+        <br />
+        
+        </div>
+        <p id="professional">*Professional Fees. &nbsp; EMI Option Available.</p>
+        </section>
+        <div id="aero-img-desktop-container">
+        <img src="../images//arrow-banner-desktop1.png" alt="banner arrow">
+        </div>
+        <div id="aero-img-mobile-container">
+        <img src="../images/arrow_services-banner-mobile.png" alt="banner arrow">
+        </div>
+        <section>
+            <div id="call-now-banner">
+            <span id="callnow">Call Now: &nbsp; &nbsp; </span>
+            <a href="tel:08956214630 " class="call-a-contact-number"> 08956214630 &nbsp; </a><span class="center-statment-dot"></span> &nbsp;
+            <a href="tel:08956214631" class="call-a-contact-number">08956214631 </a></span>
+            </div>
+            <div id="call-now-small-screen-banner">
+            <a href="tel:08956214630 " class="call-a-contact-number"> 08956214630 &nbsp; </a><span class="center-statment-dot"></span> &nbsp;
+            <a href="tel:08956214631" class="call-a-contact-number">08956214631 </a></span>
+            </div>
+            <div class="ReactComponentforSalesforceLeadForm" data-typeOfEnquiryFromBlade="Pvt. Ltd. Registration"></div>
+            </section>
+        </header>
+        
+
+</body>
+</html>
